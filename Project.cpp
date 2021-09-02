@@ -235,7 +235,6 @@ void menu_list(task *&task, int &i)
             delete_task(task, i, a, y);
             return;
         }
-        //upgrade(kbhit)
     }
     else if (n == 'M' || n == 'm')
         return;
@@ -334,7 +333,6 @@ void menu_list(task *&task, int &i)
                         cin >> task[s - 1].prior;
                     }
                     break;
-                    //agar dar change kardan priority char d vared shavad run mikhorad
                 case 4:
                     cout << "deadline: ";
                     cin.getline(r, min);
@@ -351,10 +349,7 @@ void menu_list(task *&task, int &i)
                     invalied();
                     flag = true;
                 }
-                //have success
-                //have back
             }
-            //go list2
             list(task, i);
             return;
         }
@@ -366,7 +361,6 @@ void menu_list(task *&task, int &i)
         else
         {
             invalied();
-            //go list2
             list(task, i);
             return;
         }
@@ -382,9 +376,6 @@ void menu_list(task *&task, int &i)
         list(task, i);
         return;
     }
-    //baznevisi: varieble n bayad int tarif shavad na char chon agar list empty bashad 3 bar invalied neshoon midahad
-    //dar in soorat bayad kol function menu_list baznevisi shavaad va s ha n shavad va n-=48 ha pak shavad va horoof code asci shavad dar soorat niaz n2 ham int shavad
-    //function menu_list chand function shavad
 }
 void list(task *&task, int &i)
 {
